@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chesss board</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="css/StyleSheet.css">
+    
+
+</head>
+
+<style>
+    
+    body{
+        background-image: url("images/1.jpg")
+    }
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="row">
+                <div class="row" id="divM">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1" style="text-align: center"><span id="size">A</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span id="size 2">B</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span id="size 3">C</span></div>
+                    <div class="col-xs-1" style="text-align: center" id="size 4"><span>D</span></div>
+                    <div class="col-xs-1" style="text-align: center" id="size 5"><span>E</span></div>
+                    <div class="col-xs-1" style="text-align: center" id="size 6"><span>F</span></div>
+                    <div class="col-xs-1" style="text-align: center" id="size 7"><span>G</span></div>
+                    <div class="col-xs-1" style="text-align: center" id="size 8"><span>H</span></div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row" id="FRB">
+                    <div class="col-xs-1 light" style="text-align: center"><span>1</span></div>
+                    <div class="col-xs-1 square" id="A1" style="background-color: #ebebeb"><img src="images/Rook-black.png" class="chesspieses Black Rook" id="1A_img"></div>
+                    <div class="col-xs-1 square" id="B1" style="background-color: teal"><img src="images/Nightblack.png" class="chesspieses Black Night" id="1B_img"></div>
+                    <div class="col-xs-1 square" id="C1" style="background-color: #ebebeb"><img src="images/Bishopblack.png" class="chesspieses Black Bishop" id="1C_img"></div>
+                    <div class="col-xs-1 square" id="D1" style="background-color: teal"><img src="images/Queen-black.png" class="chesspieses Black Queen" id="1D_img"></div>
+                    <div class="col-xs-1 square" id="E1" style="background-color: #ebebeb"><img src="images/Kingblack.png" class="chesspieses Black King" id="1E_img"></div>
+                    <div class="col-xs-1 square" id="F1" style="background-color: teal"><img src="images/Bishopblack.png" class="chesspieses Black Bishop" id="1F_img" ></div>
+                    <div class="col-xs-1 square" id="G1" style="background-color: #ebebeb"><img src="images/Nightblack.png" class="chesspieses Black Night" id="1G_img"></div>
+                    <div class="col-xs-1 square" id="H1" style="background-color: teal"><img src="images/Rook-black.png" class="chesspieses Black Rook" id="1H_img"></div>
+                    <div class="col-xs-1 light" style="text-align: center"><span>1</span></div>
+                </div>
+
+                <div class="row" id="SRB">
+                    <div class="col-xs-1 light" style="text-align: center"><span>2</span></div>
+                    <div class="col-xs-1 square" id="A2"style="background-color: teal"><img src="images/PondBlack%20.png" class="chesspieses Black PondB" id="2A_img"></div>
+                    <div class="col-xs-1 square" id="B2"style="background-color: #ebebeb"><img src="images/PondBlack%20.png" class="chesspieses Black PondB" id="2B_img"></div>
+                    <div class="col-xs-1 square" id="C2"style="background-color: teal"><img src="images/PondBlack%20.png"  class="chesspieses Black PondB" id="2C_img"></div>
+                    <div class="col-xs-1 square" id="D2" style="background-color: #ebebeb"><img src="images/PondBlack%20.png" class="chesspieses Black PondB" id="2D_img"></div>
+                    <div class="col-xs-1 square" id="E2"style="background-color: teal"><img src="images/PondBlack%20.png" class="chesspieses Black PondB" id="2E_img"></div>
+                    <div class="col-xs-1 square" id="F2"style="background-color: #ebebeb"><img src="images/PondBlack%20.png" class="chesspieses Black PondB" id="2F_img"></div>
+                    <div class="col-xs-1 square" id="G2"style="background-color: teal"><img src="images/PondBlack%20.png"  class="chesspieses Black PondB" id="2G_img"></div>
+                    <div class="col-xs-1 square" id="H2"style="background-color: #ebebeb"><img src="images/PondBlack%20.png" class="chesspieses Black PondB" id="2H_img"></div>
+                    <div class="col-xs-1 light" style="text-align: center"><span>2</span></div>
+                </div>
+                <div class="row" id="TR">
+                    <div class="col-xs-1 light" style="text-align: center"><span>3</span></div>
+                    <div class="col-xs-1 square" id="A3"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="B3"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="C3"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="D3"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="E3"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="F3"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="G3"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="H3"style="background-color: teal"></div>
+                    <div class="col-xs-1 light" style="text-align: center"><span>3</span></div>
+                </div>
+
+                <div class="row" id="FR">
+                    <div class="col-xs-1 light" style="text-align: center"><span>4</span></div>
+                    <div class="col-xs-1 square" id="A4"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="B4"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="C4"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="D4"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="E4"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="F4"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="G4"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="H4"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 light" style="text-align: center"><span>4</span></div>
+                </div>
+                <div class="row" id="FFR">
+                    <div class="col-xs-1 light" style="text-align: center"><span>5</span></div>
+                    <div class="col-xs-1 square" id="A5"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="B5"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="C5"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="D5"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="E5"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="F5"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="G5"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="H5"style="background-color: teal"></div>
+                    <div class="col-xs-1 light" style="text-align: center"><span>5</span></div>
+                </div>
+
+                <div class="row" id="SR">
+                    <div class="col-xs-1 light" style="text-align: center"><span>6</span></div>
+                    <div class="col-xs-1 square" id="A6"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="B6"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="C6"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="D6"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="E6"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="F6"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 square" id="G6"style="background-color: teal"></div>
+                    <div class="col-xs-1 square" id="H6"style="background-color: #ebebeb"></div>
+                    <div class="col-xs-1 light" style="text-align: center"><span>6</span></div>
+                </div>
+                <div class="row" id="TRW">
+                    <div class="col-xs-1 light" style="text-align: center"><span>7</span></div>
+                    <div class="col-xs-1 square" id="A7"style="background-color: #ebebeb"><img src="images/PondWhite.png" class="chesspieses White PondW" id="7A_img"></div>
+                    <div class="col-xs-1 square" id="B7"style="background-color: teal"><img src="images/PondWhite.png" class="chesspieses White PondW" id="7B_img"></div>
+                    <div class="col-xs-1 square" id="C7"style="background-color: #ebebeb"><img src="images/PondWhite.png"  class="chesspieses White PondW" id="7C_img"></div>
+                    <div class="col-xs-1 square" id="D7"style="background-color: teal"><img src="images/PondWhite.png" class="chesspieses White PondW" id="7D_img"></div>
+                    <div class="col-xs-1 square" id="E7"style="background-color: #ebebeb"><img src="images/PondWhite.png" class="chesspieses White PondW" id="7E_img"></div>
+                    <div class="col-xs-1 square" id="F7"style="background-color: teal"><img src="images/PondWhite.png" class="chesspieses White PondW" id="7F_img"></div>
+                    <div class="col-xs-1 square" id="G7"style="background-color: #ebebeb"><img src="images/PondWhite.png"  class="chesspieses White PondW" id="7G_img"></div>
+                    <div class="col-xs-1 square" id="H7"style="background-color: teal"><img src="images/PondWhite.png" class="chesspieses White PondW" id="7H_img"></div>
+                    <div class="col-xs-1 light" style="text-align: center"><span>7</span></div>
+                </div>
+
+                <div class="row" id="FRW">
+                    <div class="col-xs-1 light" style="text-align: center"><span>8</span></div>
+                    <div class="col-xs-1 square light" id="A8"style="background-color: teal"><img src="images/Rook-white.png" class="chesspieses White RookW" id="8A_img"></div>
+                    <div class="col-xs-1 square" id="B8"style="background-color: #ebebeb"><img src="images/Knight-white.png" class="chesspieses White NightW" id="8B_img"></div>
+                    <div class="col-xs-1 square" id="C8"style="background-color: teal"><img src="images/Bishop-white.png" class="chesspieses White BishopW" id="8C_img"></div>
+                    <div class="col-xs-1 square" id="D8"style="background-color: #ebebeb"><img src="images/Queen-white.png" class="chesspieses White QueenW" id="8D_img"></div>
+                    <div class="col-xs-1 square" id="E8"style="background-color: teal"><img src="images/King-white.ico" class="chesspieses White KingW" id="8E_img"></div>
+                    <div class="col-xs-1 square" id="F8"style="background-color: #ebebeb"><img src="images/Bishop-white.png" class="chesspieses White BishopW" id="8F_img"></div>
+                    <div class="col-xs-1 square" id="G8"style="background-color: teal"><img src="images/Knight-white.png" class="chesspieses White NightW" id="8G_img"></div>
+                    <div class="col-xs-1 square light" id="H8"style="background-color: #ebebeb"><img src="images/Rook-white.png" class="chesspieses White RookW" id="8H_img"></div>
+                    <div class="col-xs-1 light" style="text-align: center"><span>8</span></div>
+                </div>
+
+                <div class="row" id="divMM">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1" style="text-align: center"><span>A</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span>B</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span>C</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span>D</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span>E</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span>F</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span>G</span></div>
+                    <div class="col-xs-1" style="text-align: center"><span>H</span></div>
+                    <div class="col-xs-1"></div>
+                </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/home-controller.js"></script>
+
+</body>
+</html>

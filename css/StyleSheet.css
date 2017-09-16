@@ -1,0 +1,64 @@
+
+.col-xs-1{
+    padding: 0px;
+    margin: 0px;
+    width: 85px;
+    height: 85px;
+}
+
+.container{
+    position: absolute;
+    margin-top: 50px;
+    left: 250px;
+    border: 20px groove;
+    width: 870px;
+    height: 900px;
+    background-color: transparent;
+    color: #3affff;
+}
+
+.row{
+    padding: 0px;
+    padding-left: 0px;
+
+}
+.chesspieses{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 15px;
+    top: 4px;
+    z-index: 9999;
+}
+.selectPath{
+     /*-webkit-box-shadow: inset 0px 0px 6px 10px rgba(50, 174, 96, .8);*/
+     /*box-shadow: inset 0px 0px 6px 10px #0ea432;*/
+    -webkit-box-shadow: inset 0px 0px 6px 10px rgba(39, 174, 96, .8);
+    box-shadow: inset 0px 0px 6px 10px #7860f9;
+    transition: box-shadow 0.50s ease-out;
+    transition: background-color 0.50s ease-in time;
+
+}
+.crosspiece{
+    box-shadow: inset 0px 0px 6px 10px red;
+}
+/*.clickpiece{*/
+    /*!*-webkit-box-shadow: inset 0px 0px 6px 10px rgba(50, 174, 96, .8);*!*/
+    /*box-shadow: inset 0px 0px 6px 10px #4f20b5;*/
+    /*transition: box-shadow 0.50s ease-out;*/
+    /*transition: background-color 0.50s ease-in time;*/
+
+/*}*/
+.pieceHover{
+    cursor: pointer;
+    -webkit-box-shadow: inset 0px 0px 15px 15px rgba(230, 126, 34, .8);
+    box-shadow: inset 0px 0px 15px 15px rgba(230, 126, 34, .8);
+    background-color: white;
+}
+.square:hover{
+    -webkit-box-shadow: inset 0px 0px 15px 15px rgba(230, 126, 34, .8);
+    box-shadow: inset 0px 0px 15px 15px violet;
+    transition: box-shadow 0.25s ease-out;
+    transition: background-color 0.50s ease-in time;
+}
+
